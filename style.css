@@ -30,6 +30,8 @@ body {
     color: #293251;
 }
 
+/*pop up notification*/
+
 .notification{
     background-color: #f8d7da;
     display: none;
@@ -43,9 +45,11 @@ body {
     padding: 10px 0;
 }
 
+/*Weather*/
+
 .weather-container{
     width: 300px;
-    height: 260px;
+    height: 300px;
     background-color: #F4F9FF;
 }
 
@@ -58,6 +62,8 @@ body {
     display: block;
     margin: 0 auto;
 }
+
+/*Temperature*/
 
 .temperature-value{
     width: 300px;
@@ -86,10 +92,45 @@ body {
     font-size: 1.2em;
 }
 
+/*Location*/
+
 .location p{
     margin: 0;
     padding: 0;
     color: #293251;
     text-align: center;
     font-size: 0.8em;
+}
+
+/*Humidity*/
+
+.humidity-value {
+    width: 150px;
+    height: 30px;
+}
+
+.humidity-value p{
+    padding: 0;
+    margin: 0;
+    font-size: 1.2em;
+    text-align: center;
+    color: #293251;
+}
+
+.humidity-value span{
+    color: #293251;
+    font-size: 1.2em;
+}
+
+.wind-speed{
+    width: 150px;
+    height: 30px;
+}
+
+.wind-speed p{
+    padding: 0;
+    margin: 0;
+    font-size: 1.2em;
+    text-align: center;
+    color: #293251;
 }
