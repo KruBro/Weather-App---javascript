@@ -52,6 +52,7 @@ body {
     width: 300px;
     height: 300px;
     background-color: #F4F9FF;
+    gap: ;
 }
 
 .weather-icon{
@@ -106,7 +107,6 @@ body {
 /*Humidity*/
 .humidity{
     display: flex;
-    flex-direction: row;
     align-items: center;
     /* justify-content: left; */
     gap: 5px;
@@ -135,21 +135,42 @@ body {
     font-size: 1.2em;
 }
 
+/*Wind*/
+
+.wind{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.wind-img img{
+    width: 40px;
+    height: 20px;
+    display: block;
+}
+
 .wind-speed{
-    width: 150px;
-    height: 30px;
+    /*width: 150px;
+    height: 30px;*/
 }
 
 .wind-speed p{
-    padding: 0;
-    margin: 0;
+
     font-size: 1.2em;
     text-align: center;
     color: #293251;
 }
+
+/*Pressure*/
 .pressure {
-    width: 150px;
-    height: 30px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.pressure-icon img{
+    width: 40px;
+    height: 20px;
 }
 
 .pressure p{

@@ -63,6 +63,7 @@ function getWeather(latitude,longitude)
         weather.humidity = data.main.humidity;
         weather.windSpeed = data.wind.speed;
         weather.pressure = data.main.pressure;
+        console.log(data)
     })
     .then(function(){
         displayWeather();
@@ -75,7 +76,7 @@ function displayWeather(){
     descElement.innerHTML = weather.description;
     locationElement.innerHTML = `${weather.city}, ${weather.country}`;
     humdElement.innerHTML = `${weather.humidity}%<span> H</span>`;
-    windElement.innerHTML = `${weather.windSpeed}≋<span> KPH: </span>`
+    windElement.innerHTML = `${weather.windSpeed}<span> KPH </span>`
     pressureElement.innerHTML = `${weather.pressure}<span> hPa </span>`
 }
 
