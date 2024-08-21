@@ -3,15 +3,16 @@
 }
 body {
     background-color: #293251;
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container {
     width: 300px;
     background-color: #fff;
-
-    display: block;
-    margin: 0 auto;
-
     border-radius: 10px;
     padding-bottom: 50px;
 }
@@ -30,7 +31,7 @@ body {
     color: #293251;
 }
 
-/*pop up notification*/
+/*pop up notification*/ 
 
 .notification{
     background-color: #f8d7da;
@@ -103,10 +104,22 @@ body {
 }
 
 /*Humidity*/
+.humidity{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: left; */
+    gap: 5px;
+}
+.humidity-icon img{
+    width: 40px;
+    height: 20px;
+    display: block;
+}
 
 .humidity-value {
-    width: 150px;
-    height: 30px;
+    /* width: 150px; */
+    /* height: 30px; */
 }
 
 .humidity-value p{
@@ -128,6 +141,18 @@ body {
 }
 
 .wind-speed p{
+    padding: 0;
+    margin: 0;
+    font-size: 1.2em;
+    text-align: center;
+    color: #293251;
+}
+.pressure {
+    width: 150px;
+    height: 30px;
+}
+
+.pressure p{
     padding: 0;
     margin: 0;
     font-size: 1.2em;

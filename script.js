@@ -9,7 +9,7 @@ const locationElement = document.querySelector(".location p");
 const notificationElement = document.querySelector(".notification");
 const humdElement = document.querySelector(".humidity-value p");
 const windElement = document.querySelector(".wind-speed p");
-
+const pressureElement = document.querySelector(".pressure p");
 // App data
 const weather = {};
 
@@ -62,6 +62,7 @@ function getWeather(latitude,longitude)
         weather.country = data.sys.country
         weather.humidity = data.main.humidity;
         weather.windSpeed = data.wind.speed;
+        weather.pressure = data.main.pressure;
     })
     .then(function(){
         displayWeather();
@@ -73,8 +74,9 @@ function displayWeather(){
     tempElement.innerHTML = `${weather.temperature.value}°<span>C</span>`;
     descElement.innerHTML = weather.description;
     locationElement.innerHTML = `${weather.city}, ${weather.country}`;
-    humdElement.innerHTML = `${weather.humidity}~<span> H</span>`;
-    windElement.innerHTML = `${weather.windSpeed}~<span> KPH: </span>`
+    humdElement.innerHTML = `${weather.humidity}%<span> H</span>`;
+    windElement.innerHTML = `${weather.windSpeed}≋<span> KPH: </span>`
+    pressureElement.innerHTML = `${weather.pressure}<span> hPa </span>`
 }
 
 // C to F conversion
