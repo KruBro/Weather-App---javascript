@@ -6,7 +6,10 @@ const locationElement = document.querySelector(".location p");
 const notificationElement = document.querySelector(".notification");
 const humdElement = document.querySelector(".humidity-value p");
 const windElement = document.querySelector(".wind-speed p");
+<<<<<<< HEAD
 const pressureElement = document.querySelector(".pressure p");
+=======
+>>>>>>> 7f84464ef6e8a8f7bfc66b9bb90bc810b9d4eba6
 
 // App data
 const weather = {};
@@ -46,6 +49,7 @@ function getWeather(latitude, longitude) {
     let api = `https://api.openweathermap.org/data/3.0/onecall?lat=${latitude}&lon=${longitude}&exclude=minutely,hourly,daily,alerts&appid=${key}`;
 
     fetch(api)
+<<<<<<< HEAD
         .then(function (response) {
             return response.json();
         })
@@ -63,6 +67,24 @@ function getWeather(latitude, longitude) {
         .then(function () {
             displayWeather();
         });
+=======
+    .then(function(response){
+        let data = response.json();
+        return data;
+    })
+    .then(function(data){
+        weather.temperature.value = Math.floor(data.main.temp - KELVIN);
+        weather.description = data.weather[0].description;
+        weather.iconId = data.weather[0].icon;
+        weather.city = data.name;
+        weather.country = data.sys.country
+        weather.humidity = data.main.humidity;
+        weather.windSpeed = data.wind.speed;
+    })
+    .then(function(){
+        displayWeather();
+    });
+>>>>>>> 7f84464ef6e8a8f7bfc66b9bb90bc810b9d4eba6
 }
 
 // DISPLAY WEATHER TO UI
@@ -70,10 +92,16 @@ function displayWeather() {
     iconElement.innerHTML = `<img src="icons/${weather.iconId}.png"/>`;
     tempElement.innerHTML = `${weather.temperature.value}°<span>C</span>`;
     descElement.innerHTML = weather.description;
+<<<<<<< HEAD
     locationElement.innerHTML = `${weather.city}`;
     humdElement.innerHTML = `${weather.humidity}%<span> H</span>`;
     windElement.innerHTML = `${weather.windSpeed}<span> KPH </span>`;
     pressureElement.innerHTML = `${weather.pressure}<span> hPa </span>`;
+=======
+    locationElement.innerHTML = `${weather.city}, ${weather.country}`;
+    humdElement.innerHTML = `${weather.humidity}~<span> H</span>`;
+    windElement.innerHTML = `${weather.windSpeed}~<span> KPH: </span>`
+>>>>>>> 7f84464ef6e8a8f7bfc66b9bb90bc810b9d4eba6
 }
 
 // C to F conversion

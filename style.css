@@ -35,8 +35,14 @@ body {
     color: #293251;
 }
 
+<<<<<<< HEAD
 /* Pop-up Notification */
 .notification {
+=======
+/*pop up notification*/
+
+.notification{
+>>>>>>> 7f84464ef6e8a8f7bfc66b9bb90bc810b9d4eba6
     background-color: #f8d7da;
     display: none;
     border-radius: 10px;
@@ -51,12 +57,21 @@ body {
     padding: 10px;
 }
 
+<<<<<<< HEAD
 /* Weather */
 .weather-container {
     width: 100%;
     background-color: #f4f9ff;
     padding: 20px 0;
     border-radius: 10px;
+=======
+/*Weather*/
+
+.weather-container{
+    width: 300px;
+    height: 300px;
+    background-color: #F4F9FF;
+>>>>>>> 7f84464ef6e8a8f7bfc66b9bb90bc810b9d4eba6
 }
 
 .weather-icon {
@@ -71,10 +86,18 @@ body {
     height: auto;
 }
 
+<<<<<<< HEAD
 /* Temperature */
 .temperature-value {
     width: 100%;
     margin: 10px 0;
+=======
+/*Temperature*/
+
+.temperature-value{
+    width: 300px;
+    height: 60px;
+>>>>>>> 7f84464ef6e8a8f7bfc66b9bb90bc810b9d4eba6
 }
 
 .temperature-value p {
@@ -98,12 +121,19 @@ body {
     font-size: 1.2em;
 }
 
+<<<<<<< HEAD
 /* Location */
 .location p {
+=======
+/*Location*/
+
+.location p{
+>>>>>>> 7f84464ef6e8a8f7bfc66b9bb90bc810b9d4eba6
     margin: 0;
     padding: 10px 0;
     color: #293251;
     text-align: center;
+<<<<<<< HEAD
     font-size: 1em;
 }
 
@@ -123,6 +153,19 @@ body {
 }
 
 .humidity-value p {
+=======
+    font-size: 0.8em;
+}
+
+/*Humidity*/
+
+.humidity-value {
+    width: 150px;
+    height: 30px;
+}
+
+.humidity-value p{
+>>>>>>> 7f84464ef6e8a8f7bfc66b9bb90bc810b9d4eba6
     padding: 0;
     margin: 0;
     font-size: 1.2em;
@@ -130,6 +173,7 @@ body {
     color: #293251;
 }
 
+<<<<<<< HEAD
 .humidity-value span {
     color: #293251;
     font-size: 1em;
@@ -171,9 +215,26 @@ body {
 }
 
 .pressure p {
+=======
+.humidity-value span{
+    color: #293251;
+    font-size: 1.2em;
+}
+
+.wind-speed{
+    width: 150px;
+    height: 30px;
+}
+
+.wind-speed p{
+>>>>>>> 7f84464ef6e8a8f7bfc66b9bb90bc810b9d4eba6
     padding: 0;
     margin: 0;
     font-size: 1.2em;
     text-align: center;
     color: #293251;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 7f84464ef6e8a8f7bfc66b9bb90bc810b9d4eba6
