@@ -5,7 +5,7 @@ video link : https://www.youtube.com/watch?v=KqZGuzrY9D4
 
 my future plans for this application:
 1. Add More Weather Details:
-Include additional weather information such as humidity, wind speed, and pressure.
+Include additional weather information such as humidity, wind speed, and pressure. ✅
 
 2. Forecast Feature:
 Add a feature to display the weather forecast for the next few days.
