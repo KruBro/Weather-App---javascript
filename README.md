@@ -18,3 +18,6 @@ Allow users to search for weather information by city name.
 
 5. Error Handling:
 Improve error handling to display user-friendly messages for different types of errors.
+
+6. React:
+Create the same project using React.
